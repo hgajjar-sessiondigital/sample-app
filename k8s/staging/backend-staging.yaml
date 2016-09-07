@@ -33,7 +33,7 @@ spec:
           limits:
             memory: "500Mi"
             cpu: "100m"
-        imagePullPolicy: Always
+        imagePullPolicy: IfNotPresent
         readinessProbe:
           httpGet:
             path: /healthz
